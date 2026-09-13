@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>IndiaGuide – Travel, Banking, Documents, Jobs & Useful India Guides</title>
+
+  <meta name="description" content="IndiaGuide helps you find useful information about India including travel, banking, documents, government services, jobs, food, hotels and more.">
+
+  <meta name="keywords" content="India guide, India travel, Indian banks, government services India, jobs in India, Indian documents, hotels in India, Indian food">
+
+  <meta name="author" content="IndiaGuide">
+
+  <meta property="og:title" content="IndiaGuide – Your Guide to India">
+  <meta property="og:description" content="Travel, banking, documents, jobs, food, hotels and useful information about India.">
+  <meta property="og:type" content="website">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f7f6;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    /* NAVBAR */
+    nav {
+      background: #ffffff;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav-container {
+      max-width: 1150px;
+      margin: auto;
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: bold;
+      color: #138808;
+      text-decoration: none;
+    }
+
+    .logo span {
+      color: #ff9933;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 22px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+    }
+
+    .nav-links a:hover {
+      color: #138808;
+    }
+
+    /* HERO */
+    .hero {
+      min-height: 560px;
+      background:
+        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.5)),
+        url("https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=1800&q=85")
+        center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 60px 20px;
+    }
+
+    .hero-content {
+      max-width: 850px;
+    }
+
+    .hero-flag {
+      font-size: 65px;
+      margin-bottom: 10px;
+    }
+
+    .hero h1 {
+      font-size: 52px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 21px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .hero-buttons {
+      margin-top: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 13px 25px;
+      margin: 5px;
+      border-radius: 7px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .btn-primary {
+      background: #ff9933;
+      color: white;
+    }
+
+    .btn-secondary {
+      background: white;
+      color: #138808;
+    }
+
+    /* COMMON */
+    .container {
+      max-width: 1150px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section-title h2 {
+      font-size: 34px;
+      color: #075b4d;
+      margin-bottom: 8px;
+    }
+
+    .section-title p {
+      color: #666;
+    }
+
+    /* CATEGORY GRID */
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.13);
+    }
+
+    .card img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card-content {
+      padding: 22px;
+    }
+
+    .card h3 {
+      color: #075b4d;
+      margin-bottom: 8px;
+      font-size: 22px;
+    }
+
+    .card p {
+      color: #666;
+      margin-bottom: 15px;
+    }
+
+    .card-link {
+      color: #138808;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    /* FEATURE */
+    .feature {
+      background: #ffffff;
+    }
+
+    .feature-box {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .feature-image img {
+      width: 100%;
+      border-radius: 15px;
+      height: 350px;
+      object-fit: cover;
+    }
+
+    .feature-text h2 {
+      font-size: 34px;
+      color: #075b4d;
+      margin-bottom: 15px;
+    }
+
+    .feature-text p {
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .feature-list {
+      list-style: none;
+      margin-top: 15px;
+    }
+
+    .feature-list li {
+      margin: 10px 0;
+      font-weight: 600;
+    }
+
+    /* AD */
+    .ad {
+      max-width: 1150px;
+      margin: 20px auto;
+      min-height: 100px;
+      border: 1px dashed #bbb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #888;
+      background: #fafafa;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #063f37;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    footer h2 {
+      margin-bottom: 10px;
+    }
+
+    footer p {
+      color: #d9e5e2;
+      margin: 6px 0;
+    }
+
+    .footer-links {
+      margin-top: 18px;
+    }
+
+    .footer-links a {
+      color: white;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+
+    /* MOBILE */
+    @media (max-width: 850px) {
+
+      .nav-links {
+        display: none;
+      }
+
+      .hero {
+        min-height: 500px;
+      }
+
+      .hero h1 {
+        font-size: 38px;
+      }
+
+      .hero p {
+        font-size: 18px;
+      }
+
+      .categories {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .feature-box {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 550px) {
+
+      .categories {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: 32px;
+      }
+
+      .hero-flag {
+        font-size: 50px;
+      }
+
+      .section-title h2 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="nav-container">
+
+      <a href="index.html" class="logo">
+        India<span>Guide</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="#guides">Guides</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+
+    </div>
+  </nav>
+
+
+  <!-- HERO / HOME -->
+  <section class="hero" id="home">
+
+    <div class="hero-content">
+
+      <div class="hero-flag">🇮🇳</div>
+
+      <h1>Your Complete Guide to India</h1>
+
+      <p>
+        Discover useful information about travel, banking, documents,
+        jobs, food, hotels, government services and everyday life in India.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#categories" class="btn btn-primary">
+          Explore India
+        </a>
+
+        <a href="#guides" class="btn btn-secondary">
+          Popular Guides
+        </a>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ADVERTISEMENT -->
+  <div class="ad">
+    Advertisement Space — Google AdSense can be added here later.
+  </div>
+
+
+  <!-- CATEGORIES -->
+  <section id="categories">
+
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Explore IndiaGuide</h2>
+        <p>Find useful information by category</p>
+      </div>
+
+
+      <div class="categories">
+
+        <!-- TRAVEL -->
+        <div class="card">
+
+          <img
+            src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=900&q=80"
+            alt="Travel and famous places in India"
+            loading="lazy"
+          >
+
+          <div class="card-content">
+
+            <h3>✈️ Travel</h3>
+
+            <p>
+              Explore India's famous places, cities, tourist attractions,
+              transportation and travel tips.
+            </p>
+
+            <a href="#" class="card-link">
+              Explore Travel →
+            </a>
+
+          </div>
+        </div>
+
+
+        <!-- BANKING -->
+        <div class="card">
+
+          <img
+            src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=80"
+            alt="Banking and financial services in India"
+            loading="lazy"
+          >
+
+          <div class="card-content">
+
+            <h3>🏦 Banking</h3>
+
+            <p>
+              Learn about bank accounts, documents, ATM services,
+              UPI, loans and useful banking information.
+            </p>
+
+            <a href="#" class="card-link">
+              Explore Banking →
+            </a>
+
+          </div>
+        </div>
+
+
+        <!-- DOCUMENTS -->
+        <div class="card">
+
+          <img
+            src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=900&q=80"
+            alt="Important documents and paperwork"
+            loading="lazy"
+          >
+
+          <div class="card-content">
+
+            <h3>📄 Documents</h3>
+
+            <p>
+              Understand important Indian documents, applications,
+              certificates and useful document guides.
+            </p>
+
+            <a href="#" class="card-link">
+              View Documents →
+            </a>
+
+          </div>
+        </div>
+
+
+        <!-- GOVERNMENT -->
+        <div class="card">
+
+          <img
+            src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=900&q=80"
+            alt="Government services and public administration"
+            loading="lazy"
+          >
+
+          <div class="card-content">
+
+            <h3>🏛️ Government Services</h3>
+
+            <p>
+              Find easy guides about Indian government services,
+              schemes, applications and official processes.
+            </p>
+
+            <a href="#" class="card-link">
+              Government Guides →
+            </a>
+
+          </div>
+        </div>
+
+
+        <!-- JOBS -->
+        <div class="card">
+
+          <img
+            src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=900&q=80"
+            alt="Jobs and careers in India"
+            loading="lazy"
+          >
+
+          <div class="card-content">
+
+            <h3>💼 Jobs & Career</h3>
+
+            <p>
+              Discover career information, job guides, skills,
+              interviews and employment resources.
+            </p>
+
+            <a href="#" class="card-link">
+              Explore Careers →
+            </a>
+
+          </div>
+        </div>
+
+
+        <!-- FOOD -->
+        <div class="card">
+
+          <img
+            src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?auto=format&fit=crop&w=900&q=80"
+            alt="Indian food and cuisine"
+            loading="lazy"
+          >
+
+          <div class="card-content">
+
+            <h3>🍛 Indian Food</h3>
+
+            <p>
+              Explore Indian cuisine, famous dishes, regional foods
+              and food guides from different parts of India.
+            </p>
+
+            <a href="#" class="card-link">
+              Explore Food →
+            </a>
+
+          </div>
+        </div>
+
+
+        <!-- HOTELS -->
+        <div class="card">
+
+          <img
+            src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=900&q=80"
+            alt="Hotels and accommodation in India"
+            loading="lazy"
+          >
+
+          <div class="card-content">
+
+            <h3>🏨 Hotels</h3>
+
+            <p>
+              Learn about hotels, accommodation options,
+              stays and useful tips for travelers.
+            </p>
+
+            <a href="#" class="card-link">
+              Explore Hotels →
+            </a>
+
+          </div>
+        </div>
+
+
+        <!-- TRANSPORT -->
+        <div class="card">
+
+          <img
+            src="https://images.unsplash.com/photo-1474487548417-781cb71495f3?auto=format&fit=crop&w=900&q=80"
+            alt="Indian railway and transportation"
+            loading="lazy"
+          >
+
+          <div class="card-content">
+
+            <h3>🚆 Transport</h3>
+
+            <p>
+              Get useful information about trains, buses, metro,
+              airports and transportation in India.
+            </p>
+
+            <a href="#" class="card-link">
+              Transport Guides →
+            </a>
+
+          </div>
+        </div>
+
+
+        <!-- HEALTH -->
+        <div class="card">
+
+          <img
+            src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=80"
+            alt="Healthcare and hospitals in India"
+            loading="lazy"
+          >
+
+          <div class="card-content">
+
+            <h3>🏥 Health</h3>
+
+            <p>
+              Useful information about healthcare, hospitals,
+              health services and general wellness.
+            </p>
+
+            <a href="#" class="card-link">
+              Health Guides →
+            </a>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FEATURE -->
+  <section class="feature" id="guides">
+
+    <div class="container">
+
+      <div class="feature-box">
+
+        <div class="feature-image">
+
+          <img
+            src="https://images.unsplash.com/photo-1532375810709-75b1da00537c?auto=format&fit=crop&w=1000&q=85"
+            alt="Beautiful India travel destination"
+            loading="lazy"
+          >
+
+        </div>
+
+        <div class="feature-text">
+
+          <h2>Discover the Best of India</h2>
+
+          <p>
+            IndiaGuide is being built to make useful information
+            about India simple, organized and easy to understand.
+          </p>
+
+          <p>
+            Whether you are planning a trip, opening a bank account,
+            looking for documents or simply learning about India,
+            our guides will help you.
+          </p>
+
+          <ul class="feature-list">
+            <li>✓ Easy-to-understand guides</li>
+            <li>✓ Useful information for everyday life</li>
+            <li>✓ Travel and destination guides</li>
+            <li>✓ Banking and document information</li>
+            <li>✓ Government and career resources</li>
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ABOUT -->
+  <section id="about">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <h2>About IndiaGuide</h2>
+
+        <p>
+          IndiaGuide aims to become a useful online destination
+          for people looking for practical information about India.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <h2>🇮🇳 IndiaGuide</h2>
+
+    <p>Your guide to useful information about India.</p>
+
+    <div class="footer-links">
+
+      <a href="#home">Home</a>
+      <a href="#categories">Categories</a>
+      <a href="#guides">Guides</a>
+      <a href="#about">About</a>
+
+    </div>
+
+    <p style="margin-top:20px;">
+      © 2026 IndiaGuide. All rights reserved.
+    </p>
+
+  </footer>
+
+</body>
+</html>
