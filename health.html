@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Health Guide India – Healthcare, Wellness & Health Tips | IndiaGuide</title>
+
+  <meta name="description" content="IndiaGuide provides simple health information about healthcare services, healthy living, fitness, nutrition, mental wellness and common health topics in India.">
+
+  <meta name="keywords" content="health India, healthcare India, health tips, fitness India, nutrition, wellness, government health services">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f7f6;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    nav {
+      background: white;
+      box-shadow: 0 2px 12px rgba(0,0,0,.08);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav {
+      max-width: 1150px;
+      margin: auto;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      color: #138808;
+      font-size: 25px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .logo span {
+      color: #ff9933;
+    }
+
+    .home {
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      min-height: 500px;
+      background:
+        linear-gradient(rgba(0,0,0,.42), rgba(0,0,0,.58)),
+        url("https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=1800&q=85")
+        center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 50px 20px;
+    }
+
+    .hero-content {
+      max-width: 850px;
+    }
+
+    .hero-icon {
+      font-size: 65px;
+      margin-bottom: 10px;
+    }
+
+    .hero h1 {
+      font-size: 50px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 20px;
+    }
+
+    .container {
+      max-width: 1150px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section-title h2 {
+      color: #075b4d;
+      font-size: 34px;
+      margin-bottom: 8px;
+    }
+
+    .section-title p {
+      color: #666;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 5px 18px rgba(0,0,0,.08);
+      transition: .3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card h3 {
+      color: #075b4d;
+      font-size: 21px;
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      color: #666;
+      margin-bottom: 15px;
+    }
+
+    .read {
+      color: #138808;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .info-section {
+      background: white;
+    }
+
+    .info-box {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .info-box img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 15px;
+    }
+
+    .info-text h2 {
+      color: #075b4d;
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
+
+    .info-text ul {
+      padding-left: 20px;
+    }
+
+    .info-text li {
+      margin: 10px 0;
+    }
+
+    .notice {
+      margin-top: 35px;
+      padding: 20px;
+      background: #fff8e8;
+      border-left: 5px solid #ff9933;
+      border-radius: 8px;
+    }
+
+    .notice strong {
+      color: #075b4d;
+    }
+
+    footer {
+      background: #063f37;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    footer p {
+      color: #d9e5e2;
+      margin-top: 8px;
+    }
+
+    @media(max-width:850px) {
+      .cards {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .info-box {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: 38px;
+      }
+    }
+
+    @media(max-width:550px) {
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: 32px;
+      }
+
+      .hero-icon {
+        font-size: 50px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<nav>
+  <div class="nav">
+
+    <a href="index.html" class="logo">
+      India<span>Guide</span>
+    </a>
+
+    <a href="index.html" class="home">
+      ← Home
+    </a>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+
+  <div class="hero-content">
+
+    <div class="hero-icon">🏥</div>
+
+    <h1>Health & Wellness in India</h1>
+
+    <p>
+      Explore general health information, healthy living,
+      fitness, nutrition, healthcare services and wellness topics.
+    </p>
+
+  </div>
+
+</section>
+
+
+<section>
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>Explore Health Topics</h2>
+
+      <p>
+        Simple health and wellness information for everyday life.
+      </p>
+
+    </div>
+
+
+    <div class="cards">
+
+
+      <!-- HEALTHCARE -->
+
+      <div class="card">
+
+        <img
+          src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=80"
+          alt="Healthcare services"
+          loading="lazy"
+        >
+
+        <div class="card-content">
+
+          <h3>🏥 Healthcare</h3>
+
+          <p>
+            Learn about general healthcare services,
+            hospitals, clinics and preparing for medical visits.
+          </p>
+
+          <a href="#" class="read">
+            Healthcare Guide →
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- FITNESS -->
+
+      <div class="card">
+
+        <img
+          src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=900&q=80"
+          alt="Fitness and exercise"
+          loading="lazy"
+        >
+
+        <div class="card-content">
+
+          <h3>🏃 Fitness</h3>
+
+          <p>
+            Explore general fitness ideas, physical activity
+            and healthy habits for everyday life.
+          </p>
+
+          <a href="#" class="read">
+            Fitness Guide →
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- NUTRITION -->
+
+      <div class="card">
+
+        <img
+          src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=900&q=80"
+          alt="Healthy nutrition and food"
+          loading="lazy"
+        >
+
+        <div class="card-content">
+
+          <h3>🥗 Nutrition</h3>
+
+          <p>
+            Learn about balanced eating, nutritious foods
+            and healthy everyday meal habits.
+          </p>
+
+          <a href="#" class="read">
+            Nutrition Guide →
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- MENTAL WELLNESS -->
+
+      <div class="card">
+
+        <img
+          src="https://images.unsplash.com/photo-1499209974431-9dddcece7f88?auto=format&fit=crop&w=900&q=80"
+          alt="Mental wellness"
+          loading="lazy"
+        >
+
+        <div class="card-content">
+
+          <h3>🧠 Mental Wellness</h3>
+
+          <p>
+            Explore general information about relaxation,
+            healthy routines, sleep and emotional wellbeing.
+          </p>
+
+          <a href="#" class="read">
+            Wellness Guide →
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- PREVENTION -->
+
+      <div class="card">
+
+        <img
+          src="https://images.unsplash.com/photo-1471864190281-a93a3070b6de?auto=format&fit=crop&w=900&q=80"
+          alt="Health prevention and medicine"
+          loading="lazy"
+        >
+
+        <div class="card-content">
+
+          <h3>🩺 Prevention</h3>
+
+          <p>
+            Learn about general preventive health habits
+            and the importance of regular medical care.
+          </p>
+
+          <a href="#" class="read">
+            Prevention Guide →
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- HEALTHY LIVING -->
+
+      <div class="card">
+
+        <img
+          src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=900&q=80"
+          alt="Healthy lifestyle"
+          loading="lazy"
+        >
+
+        <div class="card-content">
+
+          <h3>🌿 Healthy Living</h3>
+
+          <p>
+            Discover practical habits related to sleep,
+            activity, hydration and everyday wellbeing.
+          </p>
+
+          <a href="#" class="read">
+            Healthy Living Guide →
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- PUBLIC HEALTH -->
+
+      <div class="card">
+
+        <img
+          src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=900&q=80"
+          alt="Public healthcare"
+          loading="lazy"
+        >
+
+        <div class="card-content">
+
+          <h3>🇮🇳 Public Health</h3>
+
+          <p>
+            Learn how to find reliable information about
+            public healthcare services and health resources.
+          </p>
+
+          <a href="#" class="read">
+            Public Health Guide →
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- FIRST AID -->
+
+      <div class="card">
+
+        <img
+          src="https://images.unsplash.com/photo-1603398938378-e54eab446dde?auto=format&fit=crop&w=900&q=80"
+          alt="First aid and emergency care"
+          loading="lazy"
+        >
+
+        <div class="card-content">
+
+          <h3>🩹 First Aid</h3>
+
+          <p>
+            Learn general first-aid awareness and when
+            professional medical help may be necessary.
+          </p>
+
+          <a href="#" class="read">
+            First Aid Guide →
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- DOCTOR VISIT -->
+
+      <div class="card">
+
+        <img
+          src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=900&q=80"
+          alt="Doctor consultation"
+          loading="lazy"
+        >
+
+        <div class="card-content">
+
+          <h3>👨‍⚕️ Doctor Visits</h3>
+
+          <p>
+            Learn how to prepare questions, medical information
+            and documents before visiting a healthcare professional.
+          </p>
+
+          <a href="#" class="read">
+            Doctor Visit Guide →
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="info-section">
+
+  <div class="container">
+
+    <div class="info-box">
+
+      <img
+        src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=1000&q=85"
+        alt="Healthcare professional"
+        loading="lazy"
+      >
+
+      <div class="info-text">
+
+        <h2>Build Healthy Everyday Habits</h2>
+
+        <ul>
+          <li>Stay physically active according to your abilities.</li>
+          <li>Choose a balanced and varied diet.</li>
+          <li>Get adequate sleep and maintain a regular routine.</li>
+          <li>Drink enough fluids throughout the day.</li>
+          <li>Keep regular medical checkups when appropriate.</li>
+          <li>Seek qualified medical advice when you have health concerns.</li>
+        </ul>
+
+      </div>
+
+    </div>
+
+
+    <div class="notice">
+
+      <strong>Important Health Notice:</strong>
+
+      IndiaGuide provides general educational information and is not
+      a substitute for professional medical diagnosis or treatment.
+      For symptoms, emergencies, medicines or medical decisions,
+      consult a qualified healthcare professional.
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<footer>
+
+  <h2>🇮🇳 IndiaGuide</h2>
+
+  <p>
+    Your guide to useful information about India.
+  </p>
+
+  <p>
+    © 2026 IndiaGuide. All rights reserved.
+  </p>
+
+</footer>
+
+</body>
+</html>
