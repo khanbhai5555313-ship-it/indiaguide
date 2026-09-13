@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Hotels in India – Budget, Luxury & Family Stays | IndiaGuide</title>
+
+  <meta name="description" content="Explore hotels and accommodation options in India, including budget hotels, luxury stays, family hotels, resorts and travel stay tips with IndiaGuide.">
+
+  <meta name="keywords" content="hotels in India, best hotels India, budget hotels India, luxury hotels India, family hotels, resorts India, hotel booking guide">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f7f6;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    nav {
+      background: white;
+      box-shadow: 0 2px 12px rgba(0,0,0,.08);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav {
+      max-width: 1150px;
+      margin: auto;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      color: #138808;
+      font-size: 25px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .logo span {
+      color: #ff9933;
+    }
+
+    .home {
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      min-height: 500px;
+      background:
+        linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.6)),
+        url("https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1800&q=85")
+        center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 50px 20px;
+    }
+
+    .hero-content {
+      max-width: 850px;
+    }
+
+    .hero-icon {
+      font-size: 65px;
+      margin-bottom: 10px;
+    }
+
+    .hero h1 {
+      font-size: 50px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 20px;
+    }
+
+    .container {
+      max-width: 1150px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .section-title h2 {
+      color: #075b4d;
+      font-size: 34px;
+      margin-bottom: 8px;
+    }
+
+    .section-title p {
+      color: #666;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 5px 18px rgba(0,0,0,.08);
+      transition: .3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card h3 {
+      color: #075b4d;
+      font-size: 21px;
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      color: #666;
+      margin-bottom: 15px;
+    }
+
+    .read {
+      color: #138808;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .info-section {
+      background: white;
+    }
+
+    .info-box {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .info-box img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 15px;
+    }
+
+    .info-text h2 {
+      color: #075b4d;
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
+
+    .info-text ul {
+      padding-left: 20px;
+    }
+
+    .info-text li {
+      margin: 10px 0;
+    }
+
+    .notice {
+      margin-top: 35px;
+      padding: 20px;
+      background: #fff8e8;
+      border-left: 5px solid #ff9933;
+      border-radius: 8px;
+    }
+
+    .notice strong {
+      color: #075b4d;
+    }
+
+    footer {
+      background: #063f37;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    footer p {
+      color: #d9e5e2;
+      margin-top: 8px;
+    }
+
+    @media(max-width:850px) {
+      .cards {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .info-box {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: 38px;
+      }
+    }
+
+    @media(max-width:550px) {
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: 32px;
+      }
+
+      .hero-icon {
+        font-size: 50px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<nav>
+  <div class="nav">
+
+    <a href="index.html" class="logo">
+      India<span>Guide</span>
+    </a>
+
+    <a href="index.html" class="home">
+      ← Home
+    </a>
+
+  </div>
+</nav>
+
+
+<section class="hero">
+
+  <div class="hero-content">
+
+    <div class="hero-icon">🏨</div>
+
+    <h1>Hotels & Stays in India</h1>
+
+    <p>
+      Explore different types of accommodation across India,
+      from budget stays to luxury hotels and family-friendly resorts.
+    </p>
+
+  </div>
+
+</section>
+
+
+<section>
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>Explore Hotel & Stay Options</h2>
+
+      <p>
+        Choose the type of accommodation that suits your trip and budget.
+      </p>
+
+    </div>
+
+
+    <div class="cards">
+
+
+      <!-- BUDGET -->
+
+      <div class="card">
+
+        <img
+          src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=900&q=80"
+          alt="Budget hotel room"
+          loading="lazy"
+        >
+
+        <div class="card-content">
+
+          <h3>💰 Budget Hotels</h3>
+
+          <p>
+            Find affordable accommodation for solo travellers,
+            students, families and short trips.
+          </p>
+
+          <a href="#" class="read">
+            Explore Budget Stays →
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- LUXURY -->
+
+      <div class="card">
+
+        <img
+          src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=900&q=80"
+          alt="Luxury hotel"
+          loading="lazy"
+        >
+
+        <div class="card-content">
+
+          <h3>✨ Luxury Hotels</h3>
+
+          <p>
+            Explore premium hotels offering comfortable rooms,
+            dining, hospitality and additional facilities.
+          </p>
+
+          <a href="#" class="read">
+            Explore Luxury Hotels →
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- FAMILY -->
+
+      <div class="card">
+
+        <img
+          src="https://images.unsplash.com/photo-1601918774946-25832a4be0d6?auto=format&fit=crop&w=900&q=80"
+          alt="Family hotel accommodation"
+          loading="lazy"
+        >
+
+        <div class="card-content">
+
+          <h3>👨‍👩‍👧 Family Hotels</h3>
+
+          <p>
+            Learn what to look for when choosing comfortable
+            accommodation for families and children.
+          </p>
+
+          <a href="#" class="read">
+            Family Stay Guide →
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- RESORTS -->
+
+      <div class="card">
+
+        <img
+          src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=900&q=80"
+          alt="Resort in India"
+          loading="lazy"
+        >
+
+        <div class="card-content">
+
+          <h3>🌴 Resorts</h3>
+
+          <p>
+            Discover resort-style accommodation for holidays,
+            relaxing trips and special occasions.
+          </p>
+
+          <a href="#" class="read">
+            Explore Resorts →
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- BUSINESS -->
+
+      <div class="card">
+
+        <img
+          src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=900&q=80"
+          alt="Business hotel"
+          loading="lazy"
+        >
+
+        <div class="card-content">
+
+          <h3>💼 Business Hotels</h3>
+
+          <p>
+            Useful information for travellers looking for
+            convenient stays during business trips.
+          </p>
+
+          <a href="#" class="read">
+            Business Stay Guide →
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- HOMESTAY -->
+
+      <div class="card">
+
+        <img
+          src="https://images.unsplash.com/photo-1601918774946-25832a4be0d6?auto=format&fit=crop&w=900&q=80"
+          alt="Homestay accommodation"
+          loading="lazy"
+        >
+
+        <div class="card-content">
+
+          <h3>🏠 Homestays</h3>
+
+          <p>
+            Learn about homestays and local accommodation
+            for a more personal travel experience.
+          </p>
+
+          <a href="#" class="read">
+            Homestay Guide →
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- HERITAGE -->
+
+      <div class="card">
+
+        <img
+          src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=900&q=80"
+          alt="Heritage hotel"
+          loading="lazy"
+        >
+
+        <div class="card-content">
+
+          <h3>🏰 Heritage Hotels</h3>
+
+          <p>
+            Discover traditional and heritage-style stays
+            that reflect India's history and architecture.
+          </p>
+
+          <a href="#" class="read">
+            Heritage Stay Guide →
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- HOTEL LOCATION -->
+
+      <div class="card">
+
+        <img
+          src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=900&q=80"
+          alt="Hotel and travel destination"
+          loading="lazy"
+        >
+
+        <div class="card-content">
+
+          <h3>📍 Hotels by Location</h3>
+
+          <p>
+            Learn how to choose accommodation based on
+            sightseeing, transport, safety and convenience.
+          </p>
+
+          <a href="#" class="read">
+            Location Guide →
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- HOTEL TIPS -->
+
+      <div class="card">
+
+        <img
+          src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=900&q=80"
+          alt="Hotel room and accommodation"
+          loading="lazy"
+        >
+
+        <div class="card-content">
+
+          <h3>🧳 Hotel Booking Tips</h3>
+
+          <p>
+            Learn what to check before booking a hotel,
+            including location, reviews, policies and price.
+          </p>
+
+          <a href="#" class="read">
+            Booking Tips →
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="info-section">
+
+  <div class="container">
+
+    <div class="info-box">
+
+      <img
+        src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1000&q=85"
+        alt="Comfortable hotel accommodation"
+        loading="lazy"
+      >
+
+      <div class="info-text">
+
+        <h2>Things to Check Before Booking</h2>
+
+        <ul>
+          <li>Check the hotel's location and distance from your destination.</li>
+          <li>Read recent guest reviews before making a decision.</li>
+          <li>Compare the total price and check for additional charges.</li>
+          <li>Review cancellation and refund policies.</li>
+          <li>Check available facilities and room details.</li>
+          <li>Use trusted booking platforms or the hotel's official website.</li>
+        </ul>
+
+      </div>
+
+    </div>
+
+
+    <div class="notice">
+
+      <strong>Booking Safety Tip:</strong>
+
+      Be careful with fake hotel offers and suspicious payment requests.
+      Verify the property and booking details before sending money or
+      sharing personal information.
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<footer>
+
+  <h2>🇮🇳 IndiaGuide</h2>
+
+  <p>
+    Your guide to useful information about India.
+  </p>
+
+  <p>
+    © 2026 IndiaGuide. All rights reserved.
+  </p>
+
+</footer>
+
+</body>
+</html>
