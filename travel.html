@@ -54,10 +54,20 @@
       color: #ff9933;
     }
 
-    .nav a {
+    .nav-links {
+      display: flex;
+      gap: 18px;
+      align-items: center;
+    }
+
+    .nav-links a {
       color: #333;
       text-decoration: none;
       font-weight: bold;
+    }
+
+    .nav-links a:hover {
+      color: #138808;
     }
 
     .hero {
@@ -190,6 +200,41 @@
       margin: 10px 0;
     }
 
+    .related {
+      background: #f5f7f6;
+      text-align: center;
+    }
+
+    .related h2 {
+      color: #075b4d;
+      font-size: 30px;
+      margin-bottom: 25px;
+    }
+
+    .related-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .related-links a {
+      background: white;
+      color: #075b4d;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 12px 18px;
+      border-radius: 25px;
+      box-shadow: 0 3px 10px rgba(0,0,0,.08);
+      transition: .3s;
+    }
+
+    .related-links a:hover {
+      background: #075b4d;
+      color: white;
+      transform: translateY(-2px);
+    }
+
     footer {
       background: #063f37;
       color: white;
@@ -200,6 +245,23 @@
     footer p {
       color: #d9e5e2;
       margin-top: 8px;
+    }
+
+    .footer-links {
+      margin-top: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .footer-links a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .footer-links a:hover {
+      text-decoration: underline;
     }
 
     @media(max-width:850px) {
@@ -216,6 +278,11 @@
         font-size: 38px;
       }
 
+      .nav-links {
+        gap: 10px;
+        font-size: 14px;
+      }
+
     }
 
     @media(max-width:550px) {
@@ -226,6 +293,16 @@
 
       .hero h1 {
         font-size: 32px;
+      }
+
+      .nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
       }
 
     }
@@ -242,9 +319,14 @@
       India<span>Guide</span>
     </a>
 
-    <a href="index.html">
-      ← Home
-    </a>
+    <div class="nav-links">
+
+      <a href="index.html">Home</a>
+      <a href="banking.html">Banking</a>
+      <a href="documents.html">Documents</a>
+      <a href="government.html">Government</a>
+
+    </div>
 
   </div>
 
@@ -513,6 +595,39 @@
 </section>
 
 
+<!-- RELATED INDIA GUIDE PAGES -->
+
+<section class="related">
+
+  <div class="container">
+
+    <h2>Explore More India Guides</h2>
+
+    <div class="related-links">
+
+      <a href="banking.html">🏦 Banking in India</a>
+
+      <a href="documents.html">📄 Documents & IDs</a>
+
+      <a href="government.html">🇮🇳 Government Services</a>
+
+      <a href="jobs.html">💼 Jobs & Career</a>
+
+      <a href="food.html">🍛 Indian Food</a>
+
+      <a href="hotels.html">🏨 Hotels & Stays</a>
+
+      <a href="transport.html">🚆 Transport in India</a>
+
+      <a href="health.html">🏥 Health in India</a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
 <footer>
 
   <h2>🇮🇳 IndiaGuide</h2>
@@ -520,6 +635,20 @@
   <p>
     Your guide to useful information about India.
   </p>
+
+  <div class="footer-links">
+
+    <a href="index.html">Home</a>
+    <a href="banking.html">Banking</a>
+    <a href="documents.html">Documents</a>
+    <a href="government.html">Government</a>
+    <a href="jobs.html">Jobs</a>
+    <a href="food.html">Food</a>
+    <a href="hotels.html">Hotels</a>
+    <a href="transport.html">Transport</a>
+    <a href="health.html">Health</a>
+
+  </div>
 
   <p>
     © 2026 IndiaGuide. All rights reserved.
