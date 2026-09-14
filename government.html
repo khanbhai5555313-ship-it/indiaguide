@@ -189,6 +189,34 @@
       margin: 10px 0;
     }
 
+    .explore {
+      background: #f5f7f6;
+      text-align: center;
+    }
+
+    .explore-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 25px;
+    }
+
+    .explore-links a {
+      background: white;
+      color: #075b4d;
+      text-decoration: none;
+      padding: 12px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      box-shadow: 0 3px 10px rgba(0,0,0,.08);
+      transition: .3s;
+    }
+
+    .explore-links a:hover {
+      transform: translateY(-3px);
+    }
+
     .notice {
       margin-top: 35px;
       padding: 20px;
@@ -211,6 +239,24 @@
     footer p {
       color: #d9e5e2;
       margin-top: 8px;
+    }
+
+    .footer-links {
+      margin: 20px 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .footer-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .footer-links a:hover {
+      color: #ff9933;
     }
 
     @media(max-width:850px) {
@@ -296,13 +342,13 @@
     <div class="cards">
 
 
-      <!-- GOVERNMENT SERVICES -->
+      <!-- CITIZEN SERVICES -->
 
       <div class="card">
 
         <img
           src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=900&q=80"
-          alt="Indian government services"
+          alt="Indian government citizen services"
           loading="lazy"
         >
 
@@ -315,7 +361,7 @@
             applications and citizen facilities.
           </p>
 
-          <a href="#" class="read">
+          <a href="documents.html" class="read">
             Explore Services →
           </a>
 
@@ -343,7 +389,7 @@
             welfare schemes and eligibility requirements.
           </p>
 
-          <a href="#" class="read">
+          <a href="documents.html" class="read">
             Explore Schemes →
           </a>
 
@@ -371,7 +417,7 @@
             income, residence, birth and other certificates.
           </p>
 
-          <a href="#" class="read">
+          <a href="documents.html" class="read">
             Certificate Guides →
           </a>
 
@@ -399,7 +445,7 @@
             financial documents and official tax services.
           </p>
 
-          <a href="#" class="read">
+          <a href="banking.html" class="read">
             Tax Guides →
           </a>
 
@@ -427,7 +473,7 @@
             education services and official resources.
           </p>
 
-          <a href="#" class="read">
+          <a href="jobs.html" class="read">
             Education Guides →
           </a>
 
@@ -455,7 +501,7 @@
             health programmes and government health resources.
           </p>
 
-          <a href="#" class="read">
+          <a href="health.html" class="read">
             Health Guides →
           </a>
 
@@ -470,7 +516,7 @@
 
         <img
           src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=80"
-          alt="Financial planning and pension information"
+          alt="Pension and retirement information"
           loading="lazy"
         >
 
@@ -483,7 +529,7 @@
             retirement services and official resources.
           </p>
 
-          <a href="#" class="read">
+          <a href="banking.html" class="read">
             Pension Guides →
           </a>
 
@@ -511,7 +557,7 @@
             digital applications and citizen services.
           </p>
 
-          <a href="#" class="read">
+          <a href="index.html" class="read">
             Digital Guides →
           </a>
 
@@ -539,7 +585,7 @@
             and related government services.
           </p>
 
-          <a href="#" class="read">
+          <a href="documents.html" class="read">
             Identity Guides →
           </a>
 
@@ -600,9 +646,67 @@
 </section>
 
 
+<!-- EXPLORE MORE -->
+
+<section class="explore">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>Explore More India Guides</h2>
+
+      <p>
+        Discover useful information across different categories.
+      </p>
+
+    </div>
+
+    <div class="explore-links">
+
+      <a href="index.html">🏠 Home</a>
+
+      <a href="travel.html">✈️ Travel</a>
+
+      <a href="banking.html">🏦 Banking</a>
+
+      <a href="documents.html">📄 Documents</a>
+
+      <a href="jobs.html">💼 Jobs</a>
+
+      <a href="food.html">🍛 Food</a>
+
+      <a href="hotels.html">🏨 Hotels</a>
+
+      <a href="transport.html">🚆 Transport</a>
+
+      <a href="health.html">🏥 Health</a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
 <footer>
 
   <h2>🇮🇳 IndiaGuide</h2>
+
+  <div class="footer-links">
+
+    <a href="index.html">Home</a>
+    <a href="travel.html">Travel</a>
+    <a href="banking.html">Banking</a>
+    <a href="documents.html">Documents</a>
+    <a href="government.html">Government</a>
+    <a href="jobs.html">Jobs</a>
+    <a href="food.html">Food</a>
+    <a href="hotels.html">Hotels</a>
+    <a href="transport.html">Transport</a>
+    <a href="health.html">Health</a>
+
+  </div>
 
   <p>
     Your guide to useful information about India.
