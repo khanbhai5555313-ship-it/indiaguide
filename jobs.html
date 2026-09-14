@@ -4,11 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Jobs in India – Career, Government Jobs & Job Search Guide | IndiaGuide</title>
+  <title>Jobs in India – Government Jobs, Private Jobs & Career Guide | IndiaGuide</title>
 
-  <meta name="description" content="IndiaGuide provides simple information about jobs in India, government jobs, private careers, skills, interviews, resumes and career opportunities.">
+  <meta name="description" content="Explore jobs in India with simple guides about government jobs, private careers, resumes, interviews, skills, freelancing, remote work and career planning.">
 
-  <meta name="keywords" content="jobs in India, government jobs India, private jobs, career guide India, job search, resume, interview tips">
+  <meta name="keywords" content="jobs in India, government jobs India, private jobs India, career guide India, job search India, resume tips, interview tips, freelancing India, work from home India">
+
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical" href="https://khanbhai5555313-ship-it.github.io/indiaguide/jobs.html">
+
+  <meta property="og:title" content="Jobs in India – Government Jobs, Private Jobs & Career Guide">
+  <meta property="og:description" content="Simple career and job-search guides for people looking for government jobs, private jobs, skills and career opportunities in India.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://khanbhai5555313-ship-it.github.io/indiaguide/jobs.html">
 
   <style>
     * {
@@ -61,7 +70,7 @@
     .hero {
       min-height: 500px;
       background:
-        linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.55)),
+        linear-gradient(rgba(0,0,0,.52), rgba(0,0,0,.58)),
         url("https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1800&q=85")
         center/cover;
       display: flex;
@@ -88,6 +97,8 @@
 
     .hero p {
       font-size: 20px;
+      max-width: 760px;
+      margin: auto;
     }
 
     .container {
@@ -189,6 +200,73 @@
       margin: 10px 0;
     }
 
+    .career-guide {
+      background: #f5f7f6;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .step {
+      background: white;
+      padding: 25px 20px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,.07);
+    }
+
+    .step-number {
+      width: 45px;
+      height: 45px;
+      line-height: 45px;
+      margin: 0 auto 12px;
+      background: #138808;
+      color: white;
+      border-radius: 50%;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .step h3 {
+      color: #075b4d;
+      margin-bottom: 8px;
+    }
+
+    .step p {
+      color: #666;
+      font-size: 15px;
+    }
+
+    .faq-section {
+      background: white;
+    }
+
+    .faq {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .faq-item {
+      background: #f5f7f6;
+      margin-bottom: 15px;
+      padding: 20px;
+      border-radius: 10px;
+      border-left: 4px solid #138808;
+    }
+
+    .faq-item h3 {
+      color: #075b4d;
+      margin-bottom: 8px;
+      font-size: 19px;
+    }
+
+    .faq-item p {
+      color: #555;
+    }
+
     .explore {
       background: #f5f7f6;
       text-align: center;
@@ -260,6 +338,7 @@
     }
 
     @media(max-width:850px) {
+
       .cards {
         grid-template-columns: 1fr 1fr;
       }
@@ -268,13 +347,22 @@
         grid-template-columns: 1fr;
       }
 
+      .steps {
+        grid-template-columns: 1fr 1fr;
+      }
+
       .hero h1 {
         font-size: 38px;
       }
     }
 
     @media(max-width:550px) {
+
       .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .steps {
         grid-template-columns: 1fr;
       }
 
@@ -285,13 +373,74 @@
       .hero-icon {
         font-size: 50px;
       }
+
+      .hero p {
+        font-size: 17px;
+      }
     }
   </style>
+
+  <!-- WEBSITE SCHEMA -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "IndiaGuide",
+    "url": "https://khanbhai5555313-ship-it.github.io/indiaguide/",
+    "description": "Useful information and guides about India."
+  }
+  </script>
+
+  <!-- FAQ SCHEMA -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How can I find jobs in India?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Job seekers can explore official recruitment websites, trusted job portals, company career pages and other reliable sources when searching for jobs in India."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How can I prepare for a job interview?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Prepare by understanding the job role, reviewing your resume, practising common interview questions and improving your communication skills."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How can I avoid job scams in India?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Be careful with job offers that demand money upfront or request OTPs, passwords or sensitive banking information. Verify the employer and recruitment source before proceeding."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What should a good resume include?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A resume should clearly present relevant education, skills, experience, achievements and contact information in a simple professional format."
+        }
+      }
+    ]
+  }
+  </script>
+
 </head>
 
 <body>
 
+<!-- NAVIGATION -->
+
 <nav>
+
   <div class="nav">
 
     <a href="index.html" class="logo">
@@ -303,8 +452,11 @@
     </a>
 
   </div>
+
 </nav>
 
+
+<!-- HERO -->
 
 <section class="hero">
 
@@ -315,14 +467,16 @@
     <h1>Jobs & Career in India</h1>
 
     <p>
-      Explore useful career information, job search tips,
-      government jobs, private careers and workplace guidance.
+      Explore government jobs, private careers, resumes,
+      interviews, skills, freelancing, remote work and career planning.
     </p>
 
   </div>
 
 </section>
 
+
+<!-- JOB TOPICS -->
 
 <section>
 
@@ -333,7 +487,8 @@
       <h2>Explore Jobs & Career Topics</h2>
 
       <p>
-        Simple guides to help you understand different career opportunities.
+        Simple guides to help you understand different career opportunities
+        and improve your job search.
       </p>
 
     </div>
@@ -348,7 +503,7 @@
 
         <img
           src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=900&q=80"
-          alt="Government jobs and careers"
+          alt="Government jobs and careers in India"
           loading="lazy"
         >
 
@@ -362,7 +517,7 @@
           </p>
 
           <a href="government.html" class="read">
-            Explore Government Jobs →
+            Government Job Guides →
           </a>
 
         </div>
@@ -376,7 +531,7 @@
 
         <img
           src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=900&q=80"
-          alt="Private company jobs"
+          alt="Private company jobs and careers"
           loading="lazy"
         >
 
@@ -385,12 +540,12 @@
           <h3>🏢 Private Jobs</h3>
 
           <p>
-            Discover different private-sector career paths,
-            workplace skills and job-search strategies.
+            Explore private-sector career paths, workplace skills
+            and practical job-search strategies.
           </p>
 
-          <a href="index.html" class="read">
-            Explore Private Jobs →
+          <a href="#career-guide" class="read">
+            Private Job Guide →
           </a>
 
         </div>
@@ -413,12 +568,12 @@
           <h3>📄 Resume & CV</h3>
 
           <p>
-            Learn how to prepare a clear resume and present
+            Learn how to create a clear resume that presents
             your education, skills and experience.
           </p>
 
-          <a href="documents.html" class="read">
-            Resume Guides →
+          <a href="#career-guide" class="read">
+            Resume Guide →
           </a>
 
         </div>
@@ -432,7 +587,7 @@
 
         <img
           src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=80"
-          alt="Job interview"
+          alt="Job interview preparation"
           loading="lazy"
         >
 
@@ -445,8 +600,8 @@
             and professional confidence.
           </p>
 
-          <a href="jobs.html" class="read">
-            Interview Guides →
+          <a href="#career-guide" class="read">
+            Interview Guide →
           </a>
 
         </div>
@@ -470,10 +625,10 @@
 
           <p>
             Explore useful skills, courses and learning paths
-            that can support your career development.
+            that can support long-term career development.
           </p>
 
-          <a href="jobs.html" class="read">
+          <a href="#career-guide" class="read">
             Skill Guides →
           </a>
 
@@ -488,7 +643,7 @@
 
         <img
           src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=80"
-          alt="Work from home career"
+          alt="Work from home and remote careers"
           loading="lazy"
         >
 
@@ -498,11 +653,11 @@
 
           <p>
             Learn about remote work, online careers and
-            important precautions when searching for jobs online.
+            important safety precautions for online jobs.
           </p>
 
-          <a href="jobs.html" class="read">
-            Remote Work Guides →
+          <a href="#career-guide" class="read">
+            Remote Work Guide →
           </a>
 
         </div>
@@ -526,11 +681,11 @@
 
           <p>
             Career planning ideas for students, graduates and
-            people starting their professional journey.
+            people beginning their professional journey.
           </p>
 
-          <a href="jobs.html" class="read">
-            Student Guides →
+          <a href="#career-guide" class="read">
+            Student Career Guide →
           </a>
 
         </div>
@@ -553,12 +708,12 @@
           <h3>🌐 Freelancing</h3>
 
           <p>
-            Understand basic freelancing concepts, online skills
+            Understand freelancing basics, useful online skills
             and ways to build a professional profile.
           </p>
 
-          <a href="jobs.html" class="read">
-            Freelancing Guides →
+          <a href="#career-guide" class="read">
+            Freelancing Guide →
           </a>
 
         </div>
@@ -572,7 +727,7 @@
 
         <img
           src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=80"
-          alt="Career planning"
+          alt="Career planning and professional development"
           loading="lazy"
         >
 
@@ -582,16 +737,17 @@
 
           <p>
             Learn how to set career goals, develop skills and
-            make better decisions about your professional future.
+            make informed decisions about your professional future.
           </p>
 
-          <a href="jobs.html" class="read">
-            Career Guides →
+          <a href="#career-guide" class="read">
+            Career Guide →
           </a>
 
         </div>
 
       </div>
+
 
     </div>
 
@@ -599,6 +755,91 @@
 
 </section>
 
+
+<!-- CAREER GUIDE -->
+
+<section class="career-guide" id="career-guide">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>How to Start Your Job Search</h2>
+
+      <p>
+        Follow these simple steps to build a stronger career search.
+      </p>
+
+    </div>
+
+
+    <div class="steps">
+
+
+      <div class="step">
+
+        <div class="step-number">1</div>
+
+        <h3>Choose a Career</h3>
+
+        <p>
+          Think about your interests, education,
+          abilities and the type of work you want.
+        </p>
+
+      </div>
+
+
+      <div class="step">
+
+        <div class="step-number">2</div>
+
+        <h3>Build Skills</h3>
+
+        <p>
+          Improve relevant technical, communication
+          and practical skills.
+        </p>
+
+      </div>
+
+
+      <div class="step">
+
+        <div class="step-number">3</div>
+
+        <h3>Create a Resume</h3>
+
+        <p>
+          Prepare a simple professional resume
+          highlighting your relevant qualifications.
+        </p>
+
+      </div>
+
+
+      <div class="step">
+
+        <div class="step-number">4</div>
+
+        <h3>Apply Carefully</h3>
+
+        <p>
+          Use trusted recruitment sources and
+          verify job details before applying.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- CAREER DEVELOPMENT -->
 
 <section class="info-section">
 
@@ -608,7 +849,7 @@
 
       <img
         src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1000&q=85"
-        alt="People working together"
+        alt="People working together in a professional environment"
         loading="lazy"
       >
 
@@ -617,12 +858,31 @@
         <h2>Build Your Career Step by Step</h2>
 
         <ul>
-          <li>Choose a career direction based on your interests and abilities.</li>
-          <li>Build useful skills through education and practical experience.</li>
-          <li>Create a clear and professional resume.</li>
-          <li>Prepare properly before attending interviews.</li>
-          <li>Use trusted job portals and official recruitment websites.</li>
-          <li>Keep learning as your career develops.</li>
+
+          <li>
+            Choose a career direction based on your interests and abilities.
+          </li>
+
+          <li>
+            Build useful skills through education and practical experience.
+          </li>
+
+          <li>
+            Create a clear and professional resume.
+          </li>
+
+          <li>
+            Prepare properly before attending interviews.
+          </li>
+
+          <li>
+            Use trusted job portals and official recruitment websites.
+          </li>
+
+          <li>
+            Keep learning as your career develops.
+          </li>
+
         </ul>
 
       </div>
@@ -635,8 +895,88 @@
       <strong>Job Safety Tip:</strong>
 
       Be careful with online job scams. Never pay money simply because
-      someone promises a guaranteed job, and never share OTPs,
-      passwords or sensitive banking information with unknown people.
+      someone promises a guaranteed job. Never share OTPs, passwords,
+      PINs or sensitive banking information with unknown people.
+      Always verify the employer and recruitment source before proceeding.
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- FAQ -->
+
+<section class="faq-section">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>Frequently Asked Questions</h2>
+
+      <p>
+        Common questions about jobs and careers in India.
+      </p>
+
+    </div>
+
+
+    <div class="faq">
+
+
+      <div class="faq-item">
+
+        <h3>How can I find jobs in India?</h3>
+
+        <p>
+          You can explore official recruitment websites, trusted job
+          portals, company career pages and other reliable sources
+          when searching for jobs in India.
+        </p>
+
+      </div>
+
+
+      <div class="faq-item">
+
+        <h3>How can I prepare for a job interview?</h3>
+
+        <p>
+          Understand the job role, review your resume, practise
+          common interview questions and improve your communication
+          and professional presentation.
+        </p>
+
+      </div>
+
+
+      <div class="faq-item">
+
+        <h3>How can I avoid job scams?</h3>
+
+        <p>
+          Be careful with job offers demanding money upfront or asking
+          for OTPs, passwords or sensitive banking information.
+          Verify the employer and recruitment source before proceeding.
+        </p>
+
+      </div>
+
+
+      <div class="faq-item">
+
+        <h3>What should a good resume include?</h3>
+
+        <p>
+          A resume should clearly present relevant education, skills,
+          experience, achievements and contact information in a simple,
+          professional format.
+        </p>
+
+      </div>
+
 
     </div>
 
@@ -660,6 +1000,7 @@
       </p>
 
     </div>
+
 
     <div class="explore-links">
 
@@ -689,6 +1030,8 @@
 
 </section>
 
+
+<!-- FOOTER -->
 
 <footer>
 
