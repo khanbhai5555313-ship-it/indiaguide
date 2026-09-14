@@ -6,9 +6,19 @@
 
   <title>Transport in India – Trains, Buses, Flights & Travel Guide | IndiaGuide</title>
 
-  <meta name="description" content="IndiaGuide provides simple information about transport in India, including trains, buses, flights, metro, taxis and travel tips.">
+  <meta name="description" content="Explore transport in India including trains, buses, flights, metro, taxis, auto rickshaws and two-wheelers with practical travel and safety tips.">
 
-  <meta name="keywords" content="transport in India, Indian Railways, trains India, buses India, flights India, metro India, taxi India, travel transport guide">
+  <meta name="keywords" content="transport in India, Indian Railways, trains India, buses India, flights India, metro India, taxi India, auto rickshaw India, transport guide">
+
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical" href="https://khanbhai5555313-ship-it.github.io/indiaguide/transport.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Transport in India – Trains, Buses, Flights & Travel Guide | IndiaGuide">
+  <meta property="og:description" content="Learn about trains, buses, flights, metro, taxis and other transportation options in India with useful travel tips.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://khanbhai5555313-ship-it.github.io/indiaguide/transport.html">
 
   <style>
     * {
@@ -189,6 +199,53 @@
       margin: 10px 0;
     }
 
+    .guide-section {
+      background: #f5f7f6;
+    }
+
+    .guide-box {
+      background: white;
+      padding: 35px;
+      border-radius: 15px;
+      box-shadow: 0 5px 18px rgba(0,0,0,.07);
+    }
+
+    .guide-box h2 {
+      color: #075b4d;
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 25px;
+    }
+
+    .guide-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .guide-step {
+      background: #f9fbfa;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .guide-step span {
+      display: block;
+      font-size: 32px;
+      margin-bottom: 8px;
+    }
+
+    .guide-step h3 {
+      color: #075b4d;
+      margin-bottom: 7px;
+    }
+
+    .guide-step p {
+      color: #666;
+      font-size: 14px;
+    }
+
     .notice {
       margin-top: 35px;
       padding: 20px;
@@ -199,6 +256,33 @@
 
     .notice strong {
       color: #075b4d;
+    }
+
+    .faq-section {
+      background: white;
+    }
+
+    .faq {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .faq-item {
+      background: #f8faf9;
+      padding: 22px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      border-left: 4px solid #138808;
+    }
+
+    .faq-item h3 {
+      color: #075b4d;
+      font-size: 19px;
+      margin-bottom: 7px;
+    }
+
+    .faq-item p {
+      color: #555;
     }
 
     .explore {
@@ -260,6 +344,7 @@
     }
 
     @media(max-width:850px) {
+
       .cards {
         grid-template-columns: 1fr 1fr;
       }
@@ -268,14 +353,27 @@
         grid-template-columns: 1fr;
       }
 
+      .guide-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
       .hero h1 {
         font-size: 38px;
       }
     }
 
     @media(max-width:550px) {
+
       .cards {
         grid-template-columns: 1fr;
+      }
+
+      .guide-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .guide-box {
+        padding: 20px;
       }
 
       .hero h1 {
@@ -285,13 +383,72 @@
       .hero-icon {
         font-size: 50px;
       }
+
+      .hero p {
+        font-size: 17px;
+      }
     }
   </style>
+
+  <!-- Website Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "IndiaGuide",
+    "url": "https://khanbhai5555313-ship-it.github.io/indiaguide/",
+    "description": "Useful guides and information about India including travel, hotels, food, banking, documents, government services, jobs, transport and health."
+  }
+  </script>
+
+  <!-- FAQ Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What are the main types of transport in India?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Common transport options in India include trains, buses, domestic flights, metro systems, taxis, auto rickshaws, cars, motorcycles and scooters."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which transport is best for long-distance travel in India?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The best option depends on distance, budget, schedule and personal preference. Trains, buses and domestic flights are common choices for long-distance journeys."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What should I carry when travelling in India?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Travellers should keep their ticket or booking details, identification, essential documents, phone, payment method and important personal items secure."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How can I travel safely in India?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Plan your route, use trusted transport services, keep belongings secure, follow traffic and transport rules, and check the latest official information before travelling."
+        }
+      }
+    ]
+  }
+  </script>
+
 </head>
 
 <body>
 
 <nav>
+
   <div class="nav">
 
     <a href="index.html" class="logo">
@@ -303,6 +460,7 @@
     </a>
 
   </div>
+
 </nav>
 
 
@@ -342,8 +500,6 @@
     <div class="cards">
 
 
-      <!-- TRAINS -->
-
       <div class="card">
 
         <img
@@ -370,13 +526,11 @@
       </div>
 
 
-      <!-- BUSES -->
-
       <div class="card">
 
         <img
           src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=900&q=80"
-          alt="Bus transportation"
+          alt="Bus transportation in India"
           loading="lazy"
         >
 
@@ -397,8 +551,6 @@
 
       </div>
 
-
-      <!-- FLIGHTS -->
 
       <div class="card">
 
@@ -426,13 +578,11 @@
       </div>
 
 
-      <!-- METRO -->
-
       <div class="card">
 
         <img
           src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=900&q=80"
-          alt="Metro transportation"
+          alt="Metro transportation in India"
           loading="lazy"
         >
 
@@ -454,13 +604,11 @@
       </div>
 
 
-      <!-- TAXI -->
-
       <div class="card">
 
         <img
           src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=900&q=80"
-          alt="Taxi transportation"
+          alt="Taxi and cab transportation"
           loading="lazy"
         >
 
@@ -482,13 +630,11 @@
       </div>
 
 
-      <!-- AUTO -->
-
       <div class="card">
 
         <img
           src="https://images.unsplash.com/photo-1619767886558-efdc259cde1a?auto=format&fit=crop&w=900&q=80"
-          alt="Auto rickshaw in India"
+          alt="Auto rickshaw transportation in India"
           loading="lazy"
         >
 
@@ -510,13 +656,11 @@
       </div>
 
 
-      <!-- BIKE -->
-
       <div class="card">
 
         <img
           src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=900&q=80"
-          alt="Motorcycle travel"
+          alt="Motorcycle and scooter travel"
           loading="lazy"
         >
 
@@ -537,8 +681,6 @@
 
       </div>
 
-
-      <!-- LOCAL TRANSPORT -->
 
       <div class="card">
 
@@ -566,13 +708,11 @@
       </div>
 
 
-      <!-- TRAVEL TIPS -->
-
       <div class="card">
 
         <img
           src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80"
-          alt="Road trip in India"
+          alt="Road trip and transportation in India"
           loading="lazy"
         >
 
@@ -608,7 +748,7 @@
 
       <img
         src="https://images.unsplash.com/photo-1474487548417-781cb71495f3?auto=format&fit=crop&w=1000&q=85"
-        alt="Train journey"
+        alt="Train journey in India"
         loading="lazy"
       >
 
@@ -617,12 +757,19 @@
         <h2>Travel Safely in India</h2>
 
         <ul>
+
           <li>Plan your route before starting a long journey.</li>
+
           <li>Keep tickets, identification and important documents safe.</li>
+
           <li>Use official transport websites or trusted booking services.</li>
+
           <li>Keep your luggage secure, especially in crowded places.</li>
+
           <li>Follow local traffic and transport rules.</li>
+
           <li>Allow extra travel time for delays and busy periods.</li>
+
         </ul>
 
       </div>
@@ -645,7 +792,158 @@
 </section>
 
 
-<!-- EXPLORE MORE -->
+<section class="guide-section">
+
+  <div class="container">
+
+    <div class="guide-box">
+
+      <h2>How to Choose the Right Transport</h2>
+
+      <div class="guide-grid">
+
+
+        <div class="guide-step">
+
+          <span>📍</span>
+
+          <h3>Check Distance</h3>
+
+          <p>
+            Consider how far you need to travel and
+            whether the journey is local or long-distance.
+          </p>
+
+        </div>
+
+
+        <div class="guide-step">
+
+          <span>💰</span>
+
+          <h3>Compare Cost</h3>
+
+          <p>
+            Compare fares and consider your budget before
+            selecting a transport option.
+          </p>
+
+        </div>
+
+
+        <div class="guide-step">
+
+          <span>⏱️</span>
+
+          <h3>Check Time</h3>
+
+          <p>
+            Consider journey duration, departure times
+            and possible delays.
+          </p>
+
+        </div>
+
+
+        <div class="guide-step">
+
+          <span>🔒</span>
+
+          <h3>Travel Safely</h3>
+
+          <p>
+            Use trusted services and follow applicable
+            safety and transport rules.
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="faq-section">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>Frequently Asked Questions</h2>
+
+      <p>
+        Common questions about transportation in India.
+      </p>
+
+    </div>
+
+
+    <div class="faq">
+
+
+      <div class="faq-item">
+
+        <h3>What are the main types of transport in India?</h3>
+
+        <p>
+          Common transport options include trains, buses,
+          domestic flights, metro systems, taxis,
+          auto rickshaws, cars, motorcycles and scooters.
+        </p>
+
+      </div>
+
+
+      <div class="faq-item">
+
+        <h3>Which transport is best for long-distance travel in India?</h3>
+
+        <p>
+          The best option depends on distance, budget,
+          schedule and personal preference. Trains, buses
+          and domestic flights are common choices.
+        </p>
+
+      </div>
+
+
+      <div class="faq-item">
+
+        <h3>What should I carry when travelling in India?</h3>
+
+        <p>
+          Keep your ticket or booking details, identification,
+          essential documents, phone, payment method and
+          important personal items secure.
+        </p>
+
+      </div>
+
+
+      <div class="faq-item">
+
+        <h3>How can I travel safely in India?</h3>
+
+        <p>
+          Plan your route, use trusted transport services,
+          keep belongings secure, follow traffic and transport
+          rules and check the latest official information.
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
 
 <section class="explore">
 
@@ -656,10 +954,12 @@
       <h2>Explore More India Guides</h2>
 
       <p>
-        Discover more useful information about life, travel and services in India.
+        Discover more useful information about life,
+        travel and services in India.
       </p>
 
     </div>
+
 
     <div class="explore-links">
 
