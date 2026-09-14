@@ -6,9 +6,19 @@
 
   <title>Hotels in India – Budget, Luxury & Family Stays | IndiaGuide</title>
 
-  <meta name="description" content="Explore hotels and accommodation options in India, including budget hotels, luxury stays, family hotels, resorts and travel stay tips with IndiaGuide.">
+  <meta name="description" content="Explore hotels and accommodation options in India, including budget hotels, luxury stays, family hotels, resorts, homestays and hotel booking tips with IndiaGuide.">
 
-  <meta name="keywords" content="hotels in India, best hotels India, budget hotels India, luxury hotels India, family hotels, resorts India, hotel booking guide">
+  <meta name="keywords" content="hotels in India, budget hotels India, luxury hotels India, family hotels India, resorts India, homestays India, hotel booking tips">
+
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical" href="https://khanbhai5555313-ship-it.github.io/indiaguide/hotels.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Hotels in India – Budget, Luxury & Family Stays | IndiaGuide">
+  <meta property="og:description" content="Explore budget hotels, luxury stays, family hotels, resorts, homestays and useful hotel booking tips across India.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://khanbhai5555313-ship-it.github.io/indiaguide/hotels.html">
 
   <style>
     * {
@@ -189,6 +199,53 @@
       margin: 10px 0;
     }
 
+    .guide-section {
+      background: #f5f7f6;
+    }
+
+    .guide-box {
+      background: white;
+      padding: 35px;
+      border-radius: 15px;
+      box-shadow: 0 5px 18px rgba(0,0,0,.07);
+    }
+
+    .guide-box h2 {
+      color: #075b4d;
+      margin-bottom: 25px;
+      text-align: center;
+      font-size: 32px;
+    }
+
+    .guide-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .guide-step {
+      padding: 20px;
+      background: #f9fbfa;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .guide-step span {
+      display: block;
+      font-size: 30px;
+      margin-bottom: 8px;
+    }
+
+    .guide-step h3 {
+      color: #075b4d;
+      margin-bottom: 6px;
+    }
+
+    .guide-step p {
+      color: #666;
+      font-size: 14px;
+    }
+
     .notice {
       margin-top: 35px;
       padding: 20px;
@@ -201,7 +258,32 @@
       color: #075b4d;
     }
 
-    /* EXPLORE MORE */
+    .faq-section {
+      background: white;
+    }
+
+    .faq {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .faq-item {
+      background: #f8faf9;
+      padding: 22px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      border-left: 4px solid #138808;
+    }
+
+    .faq-item h3 {
+      color: #075b4d;
+      font-size: 19px;
+      margin-bottom: 7px;
+    }
+
+    .faq-item p {
+      color: #555;
+    }
 
     .explore {
       background: #f5f7f6;
@@ -277,6 +359,7 @@
     }
 
     @media(max-width:850px) {
+
       .cards {
         grid-template-columns: 1fr 1fr;
       }
@@ -285,14 +368,27 @@
         grid-template-columns: 1fr;
       }
 
+      .guide-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
       .hero h1 {
         font-size: 38px;
       }
     }
 
     @media(max-width:550px) {
+
       .cards {
         grid-template-columns: 1fr;
+      }
+
+      .guide-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .guide-box {
+        padding: 20px;
       }
 
       .hero h1 {
@@ -302,8 +398,66 @@
       .hero-icon {
         font-size: 50px;
       }
+
+      .hero p {
+        font-size: 17px;
+      }
     }
   </style>
+
+  <!-- Website Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "IndiaGuide",
+    "url": "https://khanbhai5555313-ship-it.github.io/indiaguide/",
+    "description": "Useful guides and information about India including travel, hotels, food, banking, documents, government services, jobs and more."
+  }
+  </script>
+
+  <!-- FAQ Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I choose a hotel in India?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Consider the hotel's location, price, recent guest reviews, facilities, cancellation policy and distance from the places you plan to visit."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are budget hotels in India?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Budget hotels are generally lower-cost accommodation options that provide basic facilities for travellers who want to control their stay expenses."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What should I check before booking a hotel?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Check the location, total price, guest reviews, room details, available facilities, cancellation policy and payment conditions before booking."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How can I avoid hotel booking scams?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Use trusted booking services or the hotel's official website, verify the property details and be cautious of unusually cheap offers or requests for payment through suspicious channels."
+        }
+      }
+    ]
+  }
+  </script>
+
 </head>
 
 <body>
@@ -350,7 +504,8 @@
       <h2>Explore Hotel & Stay Options</h2>
 
       <p>
-        Choose the type of accommodation that suits your trip and budget.
+        Choose the type of accommodation that suits your trip,
+        destination and budget.
       </p>
 
     </div>
@@ -359,13 +514,11 @@
     <div class="cards">
 
 
-      <!-- BUDGET -->
-
       <div class="card">
 
         <img
           src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=900&q=80"
-          alt="Budget hotel room"
+          alt="Budget hotel room in India"
           loading="lazy"
         >
 
@@ -387,13 +540,11 @@
       </div>
 
 
-      <!-- LUXURY -->
-
       <div class="card">
 
         <img
           src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=900&q=80"
-          alt="Luxury hotel"
+          alt="Luxury hotel room"
           loading="lazy"
         >
 
@@ -414,8 +565,6 @@
 
       </div>
 
-
-      <!-- FAMILY -->
 
       <div class="card">
 
@@ -443,13 +592,11 @@
       </div>
 
 
-      <!-- RESORTS -->
-
       <div class="card">
 
         <img
           src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=900&q=80"
-          alt="Resort in India"
+          alt="Resort accommodation in India"
           loading="lazy"
         >
 
@@ -471,13 +618,11 @@
       </div>
 
 
-      <!-- BUSINESS -->
-
       <div class="card">
 
         <img
           src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=900&q=80"
-          alt="Business hotel"
+          alt="Business hotel accommodation"
           loading="lazy"
         >
 
@@ -491,15 +636,13 @@
           </p>
 
           <a href="jobs.html" class="read">
-            Business Stay Guide →
+            Business Travel Guide →
           </a>
 
         </div>
 
       </div>
 
-
-      <!-- HOMESTAY -->
 
       <div class="card">
 
@@ -527,13 +670,11 @@
       </div>
 
 
-      <!-- HERITAGE -->
-
       <div class="card">
 
         <img
           src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=900&q=80"
-          alt="Heritage hotel"
+          alt="Heritage hotel accommodation"
           loading="lazy"
         >
 
@@ -555,13 +696,11 @@
       </div>
 
 
-      <!-- HOTEL LOCATION -->
-
       <div class="card">
 
         <img
           src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=900&q=80"
-          alt="Hotel and travel destination"
+          alt="Hotels near travel destinations"
           loading="lazy"
         >
 
@@ -583,13 +722,11 @@
       </div>
 
 
-      <!-- HOTEL TIPS -->
-
       <div class="card">
 
         <img
           src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=900&q=80"
-          alt="Hotel room and accommodation"
+          alt="Hotel room booking"
           loading="lazy"
         >
 
@@ -599,7 +736,7 @@
 
           <p>
             Learn what to check before booking a hotel,
-            including location, reviews, policies and price.
+            including location, reviews, policies and total price.
           </p>
 
           <a href="travel.html" class="read">
@@ -662,7 +799,154 @@
 </section>
 
 
-<!-- EXPLORE MORE INDIA GUIDES -->
+<section class="guide-section">
+
+  <div class="container">
+
+    <div class="guide-box">
+
+      <h2>How to Choose a Hotel in India</h2>
+
+      <div class="guide-grid">
+
+        <div class="guide-step">
+
+          <span>📍</span>
+
+          <h3>Check Location</h3>
+
+          <p>
+            Choose a convenient location close to your main destination,
+            transport or sightseeing places.
+          </p>
+
+        </div>
+
+
+        <div class="guide-step">
+
+          <span>⭐</span>
+
+          <h3>Read Reviews</h3>
+
+          <p>
+            Check recent guest reviews to understand cleanliness,
+            service and the overall stay experience.
+          </p>
+
+        </div>
+
+
+        <div class="guide-step">
+
+          <span>💰</span>
+
+          <h3>Compare Prices</h3>
+
+          <p>
+            Compare the total cost and check whether taxes or
+            additional charges are included.
+          </p>
+
+        </div>
+
+
+        <div class="guide-step">
+
+          <span>🔒</span>
+
+          <h3>Book Safely</h3>
+
+          <p>
+            Use trusted booking services or verify the hotel's
+            official website before making payment.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="faq-section">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>Frequently Asked Questions</h2>
+
+      <p>
+        Common questions about hotels and accommodation in India.
+      </p>
+
+    </div>
+
+
+    <div class="faq">
+
+      <div class="faq-item">
+
+        <h3>How do I choose a hotel in India?</h3>
+
+        <p>
+          Consider the hotel's location, price, recent guest reviews,
+          facilities, cancellation policy and distance from the places
+          you plan to visit.
+        </p>
+
+      </div>
+
+
+      <div class="faq-item">
+
+        <h3>What are budget hotels in India?</h3>
+
+        <p>
+          Budget hotels are generally lower-cost accommodation options
+          that provide basic facilities for travellers who want to
+          control their stay expenses.
+        </p>
+
+      </div>
+
+
+      <div class="faq-item">
+
+        <h3>What should I check before booking a hotel?</h3>
+
+        <p>
+          Check the location, total price, guest reviews, room details,
+          available facilities, cancellation policy and payment
+          conditions before booking.
+        </p>
+
+      </div>
+
+
+      <div class="faq-item">
+
+        <h3>How can I avoid hotel booking scams?</h3>
+
+        <p>
+          Use trusted booking services or the hotel's official website,
+          verify property details and be cautious of unusually cheap
+          offers or suspicious payment requests.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
 
 <section class="explore">
 
@@ -678,7 +962,7 @@
 
       <a href="index.html">🏠 Home</a>
 
-      <a href="travel.html">🚆 Travel</a>
+      <a href="travel.html">✈️ Travel</a>
 
       <a href="banking.html">🏦 Banking</a>
 
@@ -720,7 +1004,6 @@
     <a href="food.html">Food</a>
     <a href="transport.html">Transport</a>
     <a href="health.html">Health</a>
-
   </div>
 
   <p>
