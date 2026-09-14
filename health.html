@@ -6,9 +6,71 @@
 
   <title>Health Guide India – Healthcare, Wellness & Health Tips | IndiaGuide</title>
 
-  <meta name="description" content="IndiaGuide provides simple health information about healthcare services, healthy living, fitness, nutrition, mental wellness and common health topics in India.">
+  <meta name="description" content="IndiaGuide Health Guide provides simple information about healthcare, fitness, nutrition, mental wellness, prevention, first aid and healthy living in India.">
 
-  <meta name="keywords" content="health India, healthcare India, health tips, fitness India, nutrition, wellness, government health services">
+  <meta name="keywords" content="health India, healthcare India, health tips India, fitness India, nutrition, wellness, first aid, healthy living, public health">
+
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical" href="https://khanbhai5555313-ship-it.github.io/indiaguide/health.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Health Guide India – Healthcare, Wellness & Health Tips | IndiaGuide">
+  <meta property="og:description" content="Explore simple health, fitness, nutrition, wellness and healthcare information for everyday life in India.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://khanbhai5555313-ship-it.github.io/indiaguide/health.html">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "IndiaGuide",
+    "url": "https://khanbhai5555313-ship-it.github.io/indiaguide/",
+    "description": "Useful information and guides about India."
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How can I maintain a healthy lifestyle?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A healthy lifestyle generally includes regular physical activity, a balanced diet, adequate sleep, hydration, good hygiene and appropriate medical checkups."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "When should I consult a doctor?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Consult a qualified healthcare professional when you have persistent, worsening or concerning symptoms, or whenever you are unsure about a health problem."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What should I do in a medical emergency?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In a medical emergency, seek professional emergency medical assistance immediately and follow instructions from qualified healthcare professionals."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is IndiaGuide a substitute for medical advice?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. IndiaGuide provides general educational information and does not replace diagnosis, treatment or advice from a qualified healthcare professional."
+        }
+      }
+    ]
+  }
+  </script>
 
   <style>
     * {
@@ -181,6 +243,11 @@
       margin-bottom: 15px;
     }
 
+    .info-text p {
+      color: #555;
+      margin-bottom: 15px;
+    }
+
     .info-text ul {
       padding-left: 20px;
     }
@@ -200,6 +267,72 @@
     .notice strong {
       color: #075b4d;
     }
+
+    /* HEALTH GUIDE */
+
+    .guide-section {
+      background: #eef5f2;
+    }
+
+    .guide-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .guide-card {
+      background: white;
+      padding: 25px 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,.06);
+    }
+
+    .guide-card span {
+      font-size: 35px;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .guide-card h3 {
+      color: #075b4d;
+      margin-bottom: 8px;
+    }
+
+    .guide-card p {
+      color: #666;
+      font-size: 15px;
+    }
+
+    /* FAQ */
+
+    .faq-section {
+      background: white;
+    }
+
+    .faq {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .faq-item {
+      background: #f5f7f6;
+      margin-bottom: 15px;
+      padding: 20px;
+      border-radius: 10px;
+      border-left: 4px solid #138808;
+    }
+
+    .faq-item h3 {
+      color: #075b4d;
+      font-size: 19px;
+      margin-bottom: 8px;
+    }
+
+    .faq-item p {
+      color: #555;
+    }
+
+    /* EXPLORE */
 
     .explore {
       background: #f5f7f6;
@@ -268,6 +401,10 @@
         grid-template-columns: 1fr;
       }
 
+      .guide-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
       .hero h1 {
         font-size: 38px;
       }
@@ -275,6 +412,10 @@
 
     @media(max-width:550px) {
       .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .guide-grid {
         grid-template-columns: 1fr;
       }
 
@@ -306,6 +447,8 @@
 </nav>
 
 
+<!-- HERO -->
+
 <section class="hero">
 
   <div class="hero-content">
@@ -324,6 +467,8 @@
 </section>
 
 
+<!-- HEALTH TOPICS -->
+
 <section>
 
   <div class="container">
@@ -333,7 +478,7 @@
       <h2>Explore Health Topics</h2>
 
       <p>
-        Simple health and wellness information for everyday life.
+        Simple health and wellness information for everyday life in India.
       </p>
 
     </div>
@@ -348,7 +493,7 @@
 
         <img
           src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=80"
-          alt="Healthcare services"
+          alt="Healthcare services and medical consultation in India"
           loading="lazy"
         >
 
@@ -376,7 +521,7 @@
 
         <img
           src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=900&q=80"
-          alt="Fitness and exercise"
+          alt="Fitness and physical exercise"
           loading="lazy"
         >
 
@@ -404,7 +549,7 @@
 
         <img
           src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=900&q=80"
-          alt="Healthy nutrition and food"
+          alt="Healthy balanced nutrition and food"
           loading="lazy"
         >
 
@@ -432,7 +577,7 @@
 
         <img
           src="https://images.unsplash.com/photo-1499209974431-9dddcece7f88?auto=format&fit=crop&w=900&q=80"
-          alt="Mental wellness"
+          alt="Mental wellness and relaxation"
           loading="lazy"
         >
 
@@ -460,7 +605,7 @@
 
         <img
           src="https://images.unsplash.com/photo-1471864190281-a93a3070b6de?auto=format&fit=crop&w=900&q=80"
-          alt="Health prevention and medicine"
+          alt="Preventive healthcare and medicine"
           loading="lazy"
         >
 
@@ -488,7 +633,7 @@
 
         <img
           src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=900&q=80"
-          alt="Healthy lifestyle"
+          alt="Healthy lifestyle and daily wellbeing"
           loading="lazy"
         >
 
@@ -516,7 +661,7 @@
 
         <img
           src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=900&q=80"
-          alt="Public healthcare"
+          alt="Public healthcare and community health services"
           loading="lazy"
         >
 
@@ -544,7 +689,7 @@
 
         <img
           src="https://images.unsplash.com/photo-1603398938378-e54eab446dde?auto=format&fit=crop&w=900&q=80"
-          alt="First aid and emergency care"
+          alt="First aid and emergency healthcare"
           loading="lazy"
         >
 
@@ -572,7 +717,7 @@
 
         <img
           src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=900&q=80"
-          alt="Doctor consultation"
+          alt="Doctor consultation and healthcare visit"
           loading="lazy"
         >
 
@@ -593,12 +738,15 @@
 
       </div>
 
+
     </div>
 
   </div>
 
 </section>
 
+
+<!-- HEALTHY HABITS -->
 
 <section class="info-section">
 
@@ -608,7 +756,7 @@
 
       <img
         src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=1000&q=85"
-        alt="Healthcare professional"
+        alt="Healthcare professional providing medical care"
         loading="lazy"
       >
 
@@ -616,12 +764,19 @@
 
         <h2>Build Healthy Everyday Habits</h2>
 
+        <p>
+          Small, consistent habits can support general health and
+          wellbeing. Healthy choices should be adapted to your age,
+          lifestyle and individual needs.
+        </p>
+
         <ul>
           <li>Stay physically active according to your abilities.</li>
           <li>Choose a balanced and varied diet.</li>
           <li>Get adequate sleep and maintain a regular routine.</li>
           <li>Drink enough fluids throughout the day.</li>
-          <li>Keep regular medical checkups when appropriate.</li>
+          <li>Maintain good personal hygiene.</li>
+          <li>Keep appropriate medical checkups.</li>
           <li>Seek qualified medical advice when you have health concerns.</li>
         </ul>
 
@@ -638,6 +793,166 @@
       a substitute for professional medical diagnosis or treatment.
       For symptoms, emergencies, medicines or medical decisions,
       consult a qualified healthcare professional.
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- SIMPLE HEALTH GUIDE -->
+
+<section class="guide-section">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>Simple Health Guide</h2>
+
+      <p>
+        Basic steps that can help you make informed everyday health choices.
+      </p>
+
+    </div>
+
+
+    <div class="guide-grid">
+
+      <div class="guide-card">
+
+        <span>🥗</span>
+
+        <h3>Eat Balanced Meals</h3>
+
+        <p>
+          Include a variety of nutritious foods and maintain
+          sensible eating habits.
+        </p>
+
+      </div>
+
+
+      <div class="guide-card">
+
+        <span>🏃</span>
+
+        <h3>Stay Active</h3>
+
+        <p>
+          Choose regular physical activity that is appropriate
+          for your abilities and lifestyle.
+        </p>
+
+      </div>
+
+
+      <div class="guide-card">
+
+        <span>😴</span>
+
+        <h3>Sleep Well</h3>
+
+        <p>
+          Maintain a regular sleep routine and give your body
+          enough time to rest.
+        </p>
+
+      </div>
+
+
+      <div class="guide-card">
+
+        <span>👨‍⚕️</span>
+
+        <h3>Get Medical Advice</h3>
+
+        <p>
+          Speak with a qualified healthcare professional when
+          symptoms or health concerns require attention.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- FAQ -->
+
+<section class="faq-section">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <h2>Frequently Asked Questions</h2>
+
+      <p>
+        Common questions about health and wellness.
+      </p>
+
+    </div>
+
+
+    <div class="faq">
+
+
+      <div class="faq-item">
+
+        <h3>How can I maintain a healthy lifestyle?</h3>
+
+        <p>
+          A healthy lifestyle generally includes regular physical
+          activity, a balanced diet, adequate sleep, hydration,
+          good hygiene and appropriate medical checkups.
+        </p>
+
+      </div>
+
+
+      <div class="faq-item">
+
+        <h3>When should I consult a doctor?</h3>
+
+        <p>
+          Consult a qualified healthcare professional when you have
+          persistent, worsening or concerning symptoms, or whenever
+          you are unsure about a health problem.
+        </p>
+
+      </div>
+
+
+      <div class="faq-item">
+
+        <h3>What should I do in a medical emergency?</h3>
+
+        <p>
+          In a medical emergency, seek professional emergency medical
+          assistance immediately and follow instructions from qualified
+          healthcare professionals.
+        </p>
+
+      </div>
+
+
+      <div class="faq-item">
+
+        <h3>Is IndiaGuide a substitute for medical advice?</h3>
+
+        <p>
+          No. IndiaGuide provides general educational information and
+          does not replace diagnosis, treatment or advice from a
+          qualified healthcare professional.
+        </p>
+
+      </div>
+
 
     </div>
 
@@ -688,6 +1003,8 @@
 
 </section>
 
+
+<!-- FOOTER -->
 
 <footer>
 
